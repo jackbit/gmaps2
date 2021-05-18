@@ -36,9 +36,9 @@ Flags:
   -h, --help                   help for direction
   -o, --origin string          origin latitude,longitude
   -w, --waypoints string       waypoint addrlatitude,longitude with '|' as separator
-  ```
+```
   
-  ### GeoJSON
+### GeoJSON
 
 ```
 go run main.go geojson -h
@@ -50,4 +50,20 @@ Flags:
   -f, --file string   json source for geo convertion
   -h, --help          help for geojson
   -t, --type string   type=line|multilines|multiboxes (default "line")
-  ```
+```
+
+  
+### S2Polyline
+
+```
+go run main.go s2polyline -h
+
+Usage:
+  gmaps2 s2polyline -f 'input/linestring.json' [flags]
+
+Flags:
+  -c, --contain string     contain s2.cell from lat,lng
+  -f, --file string        json source for geo convertion
+  -h, --help               help for s2polyline
+  -i, --intersect string   intersect s2.cell from lat,lng
+```

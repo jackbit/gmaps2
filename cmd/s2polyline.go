@@ -7,22 +7,21 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// geos2CMD represents the geojson command.
-var geos2CMD = &cobra.Command{
-	Use:   "geos2 -t 'polyline' -f 'input/linestring.json'",
-	Short: "geos2 geojson to s2 and run operation",
+// s2polylineCMD represents the geojson command.
+var s2polylineCMD = &cobra.Command{
+	Use:   "s2polyline -f 'input/linestring.json'",
+	Short: "s2polyline convert geojson linestring to s2polyline",
 	RunE: func(cmd *cobra.Command, args []string) (runError error) {
 		file, _ := cmd.Flags().GetString("file")
-		typegeo, _ := cmd.Flags().GetString("type")
+		intersect, _ := cmd.Flags().GetString("intersect")
+		contain, _ := cmd.Flags().GetString("contain")
 
 		if file != "" {
-			var err error
-			switch typegeo {
-			case "polyline":
-				err = geos2.S2Polyline(file)
-			}
-
-			return err
+			return geos2.S2Polyline(geos2.S2PolylineArgs{
+				File:      file,
+				Intersect: intersect,
+				Contain:   contain,
+			})
 		}
 
 		return errors.New("Missing file")
@@ -31,7 +30,8 @@ var geos2CMD = &cobra.Command{
 
 // init function initialises the command options.
 func init() {
-	geos2CMD.Flags().StringP("file", "f", "", "json source for geo convertion")
-	geos2CMD.Flags().StringP("type", "t", "polyline", "type=polyline|polygon")
-	mainCMD.AddCommand(geos2CMD)
+	s2polylineCMD.Flags().StringP("file", "f", "", "json source for geo convertion")
+	s2polylineCMD.Flags().StringP("intersect", "i", "", "intersect s2.cell from lat,lng")
+	s2polylineCMD.Flags().StringP("contain", "c", "", "contain s2.cell from lat,lng")
+	mainCMD.AddCommand(s2polylineCMD)
 }
