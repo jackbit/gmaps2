@@ -52,6 +52,26 @@ Flags:
   -t, --type string   type=line|multilines|multiboxes (default "line")
 ```
 
+#### Convert LineString to MultiPolygon
+```
+ go run main.go geojson -t multipolygon -f input/linestring.json -r 0.2 -u km
+```
+
+#### Convert LineString to 1D Polygon
+```
+go run main.go geojson -t linetogon -f input/linestring.json
+```
+
+#### Convert Origin and Destination to Polygon
+```
+go run main.go geojson -t multiboxes -f input/multiboxes.json
+```
+ 
+#### Convert Google Direction to Linestring and Destination to Polygon
+```
+go run main.go geojson -t line -f input/direction.json
+```
+
   
 ### S2Polyline
 

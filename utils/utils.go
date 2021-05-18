@@ -99,7 +99,7 @@ func LatitudeDegreeDistance(unit string) float64 {
 func PointToPolygon(point []float64, radius float64, unit string) [][][]float64 {
 	latSW, lngSW, latNE, lngNE := PointToBound(point, radius, unit)
 	box := [][]float64{
-		{lngNE, latSW},
+		{lngSW, latSW},
 		{lngNE, latSW},
 		{lngNE, latNE},
 		{lngSW, latNE},

@@ -14,6 +14,8 @@ var geojsonCMD = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) (runError error) {
 		file, _ := cmd.Flags().GetString("file")
 		typegeo, _ := cmd.Flags().GetString("type")
+		radius, _ := cmd.Flags().GetFloat64("radius")
+		unit, _ := cmd.Flags().GetString("unit")
 
 		if file != "" {
 			var err error
@@ -26,6 +28,8 @@ var geojsonCMD = &cobra.Command{
 				err = geojson.SaveMultiBoxes(file)
 			case "linetogon":
 				err = geojson.LineToPolygon(file)
+			case "multipolygon":
+				err = geojson.SaveMultiPolygon(radius, unit, file)
 			}
 
 			return err
@@ -38,6 +42,8 @@ var geojsonCMD = &cobra.Command{
 // init function initialises the command options.
 func init() {
 	geojsonCMD.Flags().StringP("file", "f", "", "json source for geo convertion")
-	geojsonCMD.Flags().StringP("type", "t", "line", "type=line|multilines|multiboxes|linetogon")
+	geojsonCMD.Flags().Float64P("radius", "r", 0.0, "radius in float64")
+	geojsonCMD.Flags().StringP("unit", "u", "km", "unit radius (km, mi, nm)")
+	geojsonCMD.Flags().StringP("type", "t", "line", "type=line|multilines|multiboxes|linetogon|multipolygon")
 	mainCMD.AddCommand(geojsonCMD)
 }
