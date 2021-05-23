@@ -21,7 +21,7 @@ Use "gmaps2 [command] --help" for more information about a command.
 ```
 
 ### Google Direction
-
+##### search direction from google map api
 ```
 go run main.go direction -h
 
@@ -39,6 +39,7 @@ Flags:
 ```
   
 ### GeoJSON
+##### geojson convert google direction result to geojson format
 
 ```
 go run main.go geojson -h
@@ -74,6 +75,7 @@ go run main.go geojson -t line -f input/direction.json
 
   
 ### S2Polyline
+##### s2polyline convert geojson linestring to s2polyline
 
 ```
 go run main.go s2polyline -h
@@ -89,10 +91,34 @@ Flags:
 ```
 
 ### GEOS
+##### geos convert linestring to polygon by GEOS
 
+#### Installation
+
+The project depends on [geos](https://github.com/libgeos/geos) (GEOS is a C++ port of the ​JTS Topology Suite), you need to complete the installation of `geos` first. The installation of `geos`:
+
+1. Mac OS X(via brew)
+```sh
+$ brew install geos
+```
+2. Ubuntu or Debian
+```sh
+$ apt-get install libgeos-dev
+```
+3. Build from source code
+```sh
+$ wget http://download.osgeo.org/geos/geos-3.9.0.tar.bz2
+$ tar xvfj geos-3.9.0.tar.bz2
+$ cd geos-3.9.0
+$ ./configure
+$ make
+$ sudo make install
+```
+
+#### Usage
 ```
 go run main.go geos -h
-geos convert linestring to polygon by GEOS
+
 
 Usage:
   gmaps2 geos -f 'input/linestring.json' -s 2 [flags]
@@ -102,3 +128,18 @@ Flags:
   -h, --help            help for geos
   -s, --sample string   example operation in integer
 ```
+
+##### Result polyline from google direction
+![polyline](https://github.com/jackbit/gmaps2/raw/main/assets/polyline_direction-min.png)
+
+##### Result conversion to polygon
+![Result conversion to polygon](https://github.com/jackbit/gmaps2/raw/main/assets/polygon_direction-min.png)
+
+##### Comparison polyline and polygon
+![Comparison polyline and polygon](https://github.com/jackbit/gmaps2/raw/main/assets/merge_polygon_direction-min.png)
+
+##### Radius polygon to polyline
+![Radius polygon to polyline](https://github.com/jackbit/gmaps2/raw/main/assets/distance_middle_radius-min.png)
+
+##### Diameter polygon
+![Diameter polygon](https://github.com/jackbit/gmaps2/raw/main/assets/full_radius-min.png)
