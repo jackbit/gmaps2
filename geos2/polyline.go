@@ -50,13 +50,15 @@ func S2Polyline(args S2PolylineArgs) error {
 	fmt.Println(fmt.Sprintf("Center: %v", cap.Center().String()))
 	fmt.Println(fmt.Sprintf("Radius: %v", cap.Radius().String()))
 
-	if args.Intersect != "" {
-		polylineIntersectPoint(linestring, utils.StringToLatLng(args.Intersect))
-	}
+	cellpoint := utils.StringToLatLng(args.Contain)
+	cell := s2.CellFromLatLng(s2.LatLngFromDegrees(cellpoint[0], cellpoint[1]))
 
-	if args.Contain != "" {
-		polylineContainCell(linestring, utils.StringToLatLng(args.Contain))
-	}
+	// if args.Intersect != "" {
+	polylineIntersectPoint(linestring, cell)
+	// }
+	// if args.Contain != "" {
+	polylineContainCell(linestring, cell)
+	// }
 
 	s2region := linestring.S2Region()
 	coverer := &s2.RegionCoverer{
@@ -66,28 +68,32 @@ func S2Polyline(args S2PolylineArgs) error {
 	}
 	covering := coverer.Covering(s2region)
 	fmt.Println("S2Region Recovering:")
+	var celltokens []string
 	for _, cellID := range covering {
-		fmt.Println(cellID.ToToken())
+		celltokens = append(celltokens, cellID.ToToken())
 	}
+	fmt.Println(strings.Join(celltokens, ","))
+
+	fmt.Println(fmt.Sprintf("CellID %v intersects S2Cover ? %v", cell.ID().ToToken(), covering.IntersectsCellID(cell.ID())))
+	fmt.Println(fmt.Sprintf("CellID %v contains S2Cover ? %v", cell.ID().ToToken(), covering.ContainsCellID(cell.ID())))
+
 	return nil
 }
 
 // polylineIntersectPoint intersects s2.Polyline with point
-func polylineIntersectPoint(linestring geo.LineString, point []float64) error {
-	cell := s2.CellFromLatLng(s2.LatLngFromDegrees(point[0], point[1]))
+func polylineIntersectPoint(linestring geo.LineString, cell s2.Cell) error {
 	isTrue := linestring.IntersectsCell(cell)
 
-	fmt.Println(fmt.Sprintf("Intersected: %v | Cell ID: %v", isTrue, cell.ID().ToToken()))
+	fmt.Println(fmt.Sprintf("s2Polyline intersects: cell ID %v ? %v", cell.ID().ToToken(), isTrue))
 
 	return nil
 }
 
 // polylineContainCell contains point in s2.Polyline
-func polylineContainCell(linestring geo.LineString, point []float64) error {
-	cell := s2.CellFromLatLng(s2.LatLngFromDegrees(point[0], point[1]))
+func polylineContainCell(linestring geo.LineString, cell s2.Cell) error {
 	isTrue := linestring.ContainsCell(cell)
 
-	fmt.Println(fmt.Sprintf("Contained: %v | Cell ID: %v", isTrue, cell.ID().ToToken()))
+	fmt.Println(fmt.Sprintf("s2Polyline contains cell ID %v ? %v", cell.ID().ToToken(), isTrue))
 
 	return nil
 }
