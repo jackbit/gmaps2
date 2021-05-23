@@ -87,3 +87,18 @@ Flags:
   -h, --help               help for s2polyline
   -i, --intersect string   intersect s2.cell from lat,lng
 ```
+
+### GEOS
+
+```
+go run main.go geos -h
+geos convert linestring to polygon by GEOS
+
+Usage:
+  gmaps2 geos -f 'input/linestring.json' -s 2 [flags]
+
+Flags:
+  -f, --file string     json source for geo convertion
+  -h, --help            help for geos
+  -s, --sample string   example operation in integer
+```

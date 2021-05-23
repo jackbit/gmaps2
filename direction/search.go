@@ -41,7 +41,7 @@ func Search(params Parameter) error {
 
 	err = utils.SaveJSON(
 		&RoutePolyline{route, polyline},
-		filepath.Join("output", "direction.json"),
+		filepath.Join("output", "direction2.json"),
 	)
 	if err == nil {
 		fmt.Println("Result is saved on output/direction.json")

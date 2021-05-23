@@ -46,5 +46,33 @@ func SaveMultiPolygon(radius float64, unit, jsonfile string) error {
 	if err == nil {
 		fmt.Println("Result is saved on output/multipolygon.json")
 	}
+
+	// var disolves []GeoJSON
+	// for _, poly := range polygons {
+	// 	disolves = append(
+	// 		disolves,
+	// 		GeoJSON{
+	// 			Type: "Feature",
+	// 			Geometry: map[string]interface{}{
+	// 				"coordinates": poly,
+	// 			},
+	// 		},
+	// 	)
+	// }
+
+	err = utils.SaveJSON(
+		map[string]interface{}{
+			"type": "FeatureCollection",
+			"features": GeoJSON{
+				Type: "Feature",
+				Geometry: map[string]interface{}{
+					"type":        "Polygon",
+					"coordinates": polygons,
+				},
+			},
+		},
+		filepath.Join("output", "disolves.json"),
+	)
+
 	return err
 }
