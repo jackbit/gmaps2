@@ -58,6 +58,17 @@ func S2Polyline(args S2PolylineArgs) error {
 		polylineContainCell(linestring, utils.StringToLatLng(args.Contain))
 	}
 
+	s2region := linestring.S2Region()
+	coverer := &s2.RegionCoverer{
+		MinLevel: 15,
+		MaxLevel: 20,
+		MaxCells: 50,
+	}
+	covering := coverer.Covering(s2region)
+	fmt.Println("S2Region Recovering:")
+	for _, cellID := range covering {
+		fmt.Println(cellID.ToToken())
+	}
 	return nil
 }
 

@@ -25,6 +25,10 @@ var geosCMD = &cobra.Command{
 				return geos2.PolygonGEOS2(geos2.S2PolylineArgs{
 					File: file,
 				})
+			case "3":
+				return geos2.PolygonGEOS3(geos2.S2PolylineArgs{
+					File: file,
+				})
 			}
 			return nil
 		}

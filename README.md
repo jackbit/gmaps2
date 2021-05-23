@@ -126,7 +126,7 @@ Usage:
 Flags:
   -f, --file string     json source for geo convertion
   -h, --help            help for geos
-  -s, --sample string   example operation in integer
+  -s, --sample string   example operation in integer (s=1,2,3)
 ```
 
 ##### Result polyline from google direction
@@ -143,3 +143,7 @@ Flags:
 
 ##### Diameter polygon
 ![Diameter polygon](https://github.com/jackbit/gmaps2/raw/main/assets/full_radius-min.png)
+
+
+##### S2 Polygon
+![Diameter polygon](https://github.com/jackbit/gmaps2/raw/main/assets/googles2polyline.png)
