@@ -4,11 +4,15 @@ import (
 	"fmt"
 	"gmaps2/geojson"
 	"gmaps2/utils"
+	"math"
 	"strings"
 
+	"github.com/golang/geo/s1"
 	"github.com/golang/geo/s2"
 	geo "github.com/toyo/go-latlong"
 )
+
+const earthRadiusKm = 6371.01
 
 type S2PolylineArgs struct {
 	Intersect string
@@ -69,13 +73,35 @@ func S2Polyline(args S2PolylineArgs) error {
 	covering := coverer.Covering(s2region)
 	fmt.Println("S2Region Recovering:")
 	var celltokens []string
+	var cells []s2.Cell
 	for _, cellID := range covering {
 		celltokens = append(celltokens, cellID.ToToken())
+		cells = append(cells, s2.CellFromCellID(cellID))
 	}
 	fmt.Println(strings.Join(celltokens, ","))
 
 	fmt.Println(fmt.Sprintf("CellID %v intersects S2Cover ? %v", cell.ID().ToToken(), covering.IntersectsCellID(cell.ID())))
 	fmt.Println(fmt.Sprintf("CellID %v contains S2Cover ? %v", cell.ID().ToToken(), covering.ContainsCellID(cell.ID())))
+
+	var shortestcells s2.Cell
+	var shortestdistance float64 = 0.0
+	for _, celltarget := range cells {
+		distance := cell.DistanceToCell(celltarget)
+		kmdistance := angleToKm(distance.Angle())
+		fmt.Println(fmt.Sprintf("Distance to %v is %v", celltarget.ID().ToToken(), kmdistance))
+		if shortestdistance > kmdistance || shortestdistance == 0.0 {
+			shortestdistance = kmdistance
+			shortestcells = celltarget
+		}
+	}
+
+	fmt.Println(
+		fmt.Sprintf(
+			"Closest distance is %v km by %v",
+			(math.Round(shortestdistance/0.0001) * 0.0001),
+			shortestcells.ID().ToToken(),
+		),
+	)
 
 	return nil
 }
@@ -96,4 +122,9 @@ func polylineContainCell(linestring geo.LineString, cell s2.Cell) error {
 	fmt.Println(fmt.Sprintf("s2Polyline contains cell ID %v ? %v", cell.ID().ToToken(), isTrue))
 
 	return nil
+}
+
+// angleToKm to convert s1.Angle to km
+func angleToKm(angle s1.Angle) float64 {
+	return earthRadiusKm * float64(angle)
 }
