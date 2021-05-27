@@ -7,8 +7,11 @@ go run main.go s2trip --start '-33.43535986456468, -70.70988860468003' --end '-3
 ```
 
 Video Explanation:
+
 https://youtube.com/watch?v=vmJxjaTARRY
+
 https://www.youtube.com/watch?v=_-ewGKC4ZRM
+
 
 ### Setup
 ```
