@@ -1,5 +1,14 @@
 # gmaps2
 
+### Main Example
+````
+go run main.go s2trip --start '-33.43535986456468, -70.70988860468003' --end '-33.46268514612078, -70.68886433781532' --pickup '-33.447130720203354, -70.70814176197621' --drop '-33.43672804765354, -70.6861326682225' --radius 13 --tripmaxlevel 16 --tripminlevel 16 --tripmaxcell 50
+```
+
+Video Explanation:
+https://youtube.com/watch?v=vmJxjaTARRY
+https://www.youtube.com/watch?v=_-ewGKC4ZRM
+
 ### Setup
 ```
 go mod tidy

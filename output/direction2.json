@@ -1,253 +1,228 @@
 {
  "route": {
-  "summary": "100 Feet Rd",
+  "summary": "Agustinas and Autopista Central/Ruta 5",
   "legs": [
    {
     "steps": [
      {
-      "html_instructions": "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003e100 Feet Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eIntermediate Ring Rd\u003c/b\u003e toward \u003cb\u003e3rd Main Rd\u003c/b\u003e",
+      "html_instructions": "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eAv. Padre Alberto Hurtado\u003c/b\u003e toward \u003cb\u003eNueva Imperial\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePortales\u003c/b\u003e",
+      "distance": {
+       "text": "0.2 km",
+       "value": 178
+      },
+      "start_location": {
+       "lat": -33.4461483,
+       "lng": -70.6919394
+      },
+      "end_location": {
+       "lat": -33.4445517,
+       "lng": -70.69187149999999
+      },
+      "polyline": {
+       "points": "lmckEr_nnL_@CoCIc@?kB?"
+      },
+      "steps": null,
+      "transit_details": null,
+      "travel_mode": "DRIVING",
+      "duration": {
+       "value": 20,
+       "text": "20s"
+      }
+     },
+     {
+      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003ePortales\u003c/b\u003e",
       "distance": {
        "text": "0.3 km",
-       "value": 264
+       "value": 315
       },
       "start_location": {
-       "lat": 12.937384,
-       "lng": 77.6270199
+       "lat": -33.4445517,
+       "lng": -70.69187149999999
       },
       "end_location": {
-       "lat": 12.9384974,
-       "lng": 77.6291502
+       "lat": -33.4442981,
+       "lng": -70.6885085
       },
       "polyline": {
-       "points": "sy}mA{oxxMY_@[e@QYMUMUKUO_@IOGOISKWCICGAGCIEOIUESCMCGAGCIAGAGAE"
+       "points": "lcckEd_nnLA_@GwBIQSaFAy@GyE"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 46,
-       "text": "46s"
+       "value": 44,
+       "text": "44s"
       }
      },
      {
-      "html_instructions": "Make a \u003cb\u003eU-turn\u003c/b\u003e at \u003cb\u003e3rd Main Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow 100 Feet Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Naveen Terraces (on the left)\u003c/div\u003e",
+      "html_instructions": "Keep \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003ePortales\u003c/b\u003e",
       "distance": {
-       "text": "2.1 km",
-       "value": 2053
+       "text": "0.8 km",
+       "value": 781
       },
       "start_location": {
-       "lat": 12.9384974,
-       "lng": 77.6291502
+       "lat": -33.4442981,
+       "lng": -70.6885085
       },
       "end_location": {
-       "lat": 12.92459,
-       "lng": 77.61822459999999
+       "lat": -33.4438646,
+       "lng": -70.6801081
       },
       "polyline": {
-       "points": "s`~mAe}xxMREFZFXJZFVBH@HHV@@FPFNJVJTJTHPJRDJLTJPFLHJHJHLHLXZHL~@nAfDnE~@lAp@z@r@z@LPHJDDDDDDDDFFFDHFJHHDLHFDFBFDfBt@XJ~Aj@lCv@pF~AdBd@dCp@~C|@JDLD~@X|Ad@xAf@`Bd@NDPFl@RjEnAn@Rz@ZRJLHJPNVLNLXJV^nAZ~@Pr@b@pA"
+       "points": "zackEdjmnLCgBAi@Ac@?CAg@U_KM_GAUAgB?QGcCW}MAa@CY"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 512,
-       "text": "8m32s"
+       "value": 68,
+       "text": "1m8s"
       }
      },
      {
-      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eHosur Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Masjid-E-Noor (on the right)\u003c/div\u003e",
+      "html_instructions": "\u003cb\u003ePortales\u003c/b\u003e turns slightly \u003cb\u003eright\u003c/b\u003e and becomes \u003cb\u003eAgustinas\u003c/b\u003e",
       "distance": {
-       "text": "0.5 km",
-       "value": 455
+       "text": "1.8 km",
+       "value": 1811
       },
       "start_location": {
-       "lat": 12.92459,
-       "lng": 77.61822459999999
+       "lat": -33.4438646,
+       "lng": -70.6801081
       },
       "end_location": {
-       "lat": 12.9278263,
-       "lng": 77.6160714
+       "lat": -33.4417492,
+       "lng": -70.66081609999999
       },
       "polyline": {
-       "points": "ui{mA{xvxMRd@OHeB|@cB`A]NA?C?A?A?ICYNmExBgDfB"
+       "points": "b_ckEtuknLBI@K?C?G@WBK@KHSAk@Cq@G}@AKIiAYqEQgEWcEYwGKmAQiBQqDSsD_@uGo@oGO}ACMKyAc@mE[_GCQAWCaBUkEYiHE{AQmC"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 78,
-       "text": "1m18s"
+       "value": 296,
+       "text": "4m56s"
       }
      },
      {
-      "html_instructions": "Turn \u003cb\u003eleft\u003c/b\u003e after Kallada Travels Bus Stop (on the left)\u003cdiv style=\"font-size:0.9em\"\u003ePass by the pharmacy (on the right in 350\u0026nbsp;m)\u003c/div\u003e",
+      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eAv. Manuel Rodriguez Nte.\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eAv. Manuel Rodríguez\u003c/b\u003e",
       "distance": {
-       "text": "1.0 km",
-       "value": 978
+       "text": "0.2 km",
+       "value": 205
       },
       "start_location": {
-       "lat": 12.9278263,
-       "lng": 77.6160714
+       "lat": -33.4417492,
+       "lng": -70.66081609999999
       },
       "end_location": {
-       "lat": 12.9196408,
-       "lng": 77.6129407
+       "lat": -33.4433336,
+       "lng": -70.6608135
       },
       "polyline": {
-       "points": "}}{mAmkvxMjA`@B@@@JBTJp@RJBp@Rj@Fl@Bv@Jv@Np@Nb@JNDv@TD@d@Ll@P\\B\\Pv@RRD^Ff@Jf@FjA\\jAd@p@\\ZNb@Rz@`@`Af@RHd@P^FRDRFZLTNx@Np@H^F"
+       "points": "|qbkEb}gnLBG?C?E?G@I?G@GBGDGFGhEr@ZDz@N"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 218,
-       "text": "3m38s"
+       "value": 45,
+       "text": "45s"
       }
      },
      {
-      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e before Udupi Sagar\u003cdiv style=\"font-size:0.9em\"\u003ePass by Gangothri Bar \u0026amp; Restaurant (on the left)\u003c/div\u003e",
+      "html_instructions": "Take the ramp on the \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eAutopista Central\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eRuta 5\u003c/b\u003e",
       "distance": {
-       "text": "0.3 km",
-       "value": 285
+       "text": "3.2 km",
+       "value": 3201
       },
       "start_location": {
-       "lat": 12.9196408,
-       "lng": 77.6129407
+       "lat": -33.4433336,
+       "lng": -70.6608135
       },
       "end_location": {
-       "lat": 12.9197661,
-       "lng": 77.61031659999999
+       "lat": -33.4714714,
+       "lng": -70.656362
       },
       "polyline": {
-       "points": "wjzmA{wuxMAH?jAAfAChAARAp@Cf@?`@Cp@E`B"
+       "points": "x{bkE`}gnLPE^@D?J?H@D@dALR@P@J?d@?LAVINId@A`ACbAGF?xCWdC[fAUd@I|@WhAYl@OjBa@vASj@OrA[nAW~Du@d@Gl@MD?|@OxAY~EeAl@MXGbAYh@Wh@]xAyALGJIJKNKPKNKZM^ORGTGPCZEhAG|@GR?f@AhBLH@pBVNBT@j@Dj@D\\@D@p@@x@@p@Cl@CfCGj@AdBGD?\\AD?TAhBGvACxAG~CI@?`@AtAE|AE~BE`BCbCGlEAxBItAEx@GjA@fA?j@?TARCNANAr@OLC"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 46,
-       "text": "46s"
+       "value": 155,
+       "text": "2m35s"
       }
      },
      {
-      "html_instructions": "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e16th Main Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eTavarekere Main Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow 16th Main Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by the park (on the right)\u003c/div\u003e",
+      "html_instructions": "Take exit \u003cb\u003e3S\u003c/b\u003e toward \u003cb\u003eRuta 78\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eC. Valdovinos\u003c/b\u003e",
       "distance": {
-       "text": "0.6 km",
-       "value": 642
+       "text": "0.1 km",
+       "value": 107
       },
       "start_location": {
-       "lat": 12.9197661,
-       "lng": 77.61031659999999
+       "lat": -33.4714714,
+       "lng": -70.656362
       },
       "end_location": {
-       "lat": 12.9139956,
-       "lng": 77.61010139999999
+       "lat": -33.4723554,
+       "lng": -70.6559729
       },
       "polyline": {
-       "points": "qkzmAoguxM~ABbDBbCHfCJF?`BBX@bBBjA?|HB"
+       "points": "tkhkEfagnLR?HAJCRKvAy@BAD?FAH@"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 157,
-       "text": "2m37s"
+       "value": 8,
+       "text": "8s"
       }
      },
      {
-      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e after Capsicum Family Restaurants (on the right)\u003cdiv style=\"font-size:0.9em\"\u003ePass by Spiritz \u0026amp; More @ Honey Drops (on the left)\u003c/div\u003e",
+      "html_instructions": "Merge onto \u003cb\u003eAv. Viel\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
       "distance": {
-       "text": "56 m",
-       "value": 56
+       "text": "0.2 km",
+       "value": 167
       },
       "start_location": {
-       "lat": 12.9139956,
-       "lng": 77.61010139999999
+       "lat": -33.4723554,
+       "lng": -70.6559729
       },
       "end_location": {
-       "lat": 12.913914,
-       "lng": 77.6095949
+       "lat": -33.4736762,
+       "lng": -70.65511579999999
       },
       "polyline": {
-       "points": "ogymAcfuxM?LPvA"
+       "points": "fqhkEx~fnLXQnAi@^W\\Wj@_@f@WJE"
       },
       "steps": null,
       "transit_details": null,
       "travel_mode": "DRIVING",
       "duration": {
-       "value": 11,
-       "text": "11s"
-      }
-     },
-     {
-      "html_instructions": "Turn \u003cb\u003eright\u003c/b\u003e after Specsmakers - BTM Layout (on the left)",
-      "distance": {
-       "text": "49 m",
-       "value": 49
-      },
-      "start_location": {
-       "lat": 12.913914,
-       "lng": 77.6095949
-      },
-      "end_location": {
-       "lat": 12.9143527,
-       "lng": 77.6095903
-      },
-      "polyline": {
-       "points": "}fymA}buxMwA?"
-      },
-      "steps": null,
-      "transit_details": null,
-      "travel_mode": "DRIVING",
-      "duration": {
-       "value": 32,
-       "text": "32s"
-      }
-     },
-     {
-      "html_instructions": "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e5th A Cross Rd\u003c/b\u003e",
-      "distance": {
-       "text": "12 m",
-       "value": 12
-      },
-      "start_location": {
-       "lat": 12.9143527,
-       "lng": 77.6095903
-      },
-      "end_location": {
-       "lat": 12.9143448,
-       "lng": 77.60948379999999
-      },
-      "polyline": {
-       "points": "uiymA}buxM@T"
-      },
-      "steps": null,
-      "transit_details": null,
-      "travel_mode": "DRIVING",
-      "duration": {
-       "value": 26,
-       "text": "26s"
+       "value": 15,
+       "text": "15s"
       }
      }
     ],
     "distance": {
-     "text": "4.8 km",
-     "value": 4794
+     "text": "6.8 km",
+     "value": 6765
     },
     "start_location": {
-     "lat": 12.937384,
-     "lng": 77.6270199
+     "lat": -33.4461483,
+     "lng": -70.6919394
     },
     "end_location": {
-     "lat": 12.9143448,
-     "lng": 77.60948379999999
+     "lat": -33.4736762,
+     "lng": -70.65511579999999
     },
-    "start_address": "Sony World Signal, AVS Layout, Koramangala, Bengaluru, Karnataka 560095, India",
-    "end_address": "796, 15th Main Rd, Stage 2, BTM Layout, Bengaluru, Karnataka 560076, India",
+    "start_address": "Av. Padre Alberto Hurtado 581, Santiago, Estación Central, Región Metropolitana, Chile",
+    "end_address": "Av. Viel 2111, Santiago, Región Metropolitana, Chile",
     "via_waypoint": [],
     "duration": {
-     "value": 1126,
-     "text": "18m46s"
+     "value": 651,
+     "text": "10m51s"
     },
     "duration_in_traffic": {
      "value": 0,
@@ -259,16 +234,16 @@
   ],
   "waypoint_order": [],
   "overview_polyline": {
-   "points": "sy}mA{oxxMuAuBs@{Aq@oBa@aBAERENt@XfAZz@l@tAj@fAd@r@lBfClItKb@h@RRf@\\d@X`C`A~Aj@lCv@vIdCdHnBvDjA|EzAxFbBjBn@`@TZh@Zh@j@fBl@rBv@vBwFxCI?ICYNuJ`F|Ah@fA^|@VxAJv@J|Cp@pCv@\\B\\PjAXfARf@FjA\\|BbA~@b@|BhAx@Zr@Ln@TTNx@NpAPGfFGlBCrAE`B~ABfHLnCJjHH|HB?LPvAwA?@T"
+   "points": "lmckEr_nnLoDMoC?IwCIQSaFIsGEqCYoMQoK_@aRE{@Da@Dc@J_@E}AIiAc@{GQgEWcEYwGKmAQiBQqDs@iM_AmJOgBc@mE[_GEi@CaBUkE_@eKQmCBG?I@Q@OHOFGhEr@vATPE^@P?hBRbA@d@KNId@AdCK`DWdC[fAUbBa@vBi@jBa@vAS~Bk@nGmAvCe@`KuBbAYh@Wh@]xAyAXQZW`@Wz@]h@Ol@IfCOz@ArBN`CZjCNv@BjBAfIU~@CrSk@`FIbCGlEAnEOx@GjA@rB?h@E`BW\\A^OzA{@LAH@XQnAi@^WhAw@r@]"
   },
   "bounds": {
    "northeast": {
-    "lat": 12.9384974,
-    "lng": 77.6291811
+    "lat": -33.4417492,
+    "lng": -70.65511579999999
    },
    "southwest": {
-    "lat": 12.913914,
-    "lng": 77.60948379999999
+    "lat": -33.4736762,
+    "lng": -70.6919394
    }
   },
   "copyrights": "Map data ©2021",
@@ -277,300 +252,408 @@
  },
  "polyline": [
   {
-   "lat": 12.937380000000001,
-   "lng": 77.62702
+   "lat": -33.44615,
+   "lng": -70.69194
   },
   {
-   "lat": 12.93781,
-   "lng": 77.62761
+   "lat": -33.44527,
+   "lng": -70.69187000000001
   },
   {
-   "lat": 12.938070000000002,
-   "lng": 77.62807000000001
+   "lat": -33.44455,
+   "lng": -70.69187000000001
   },
   {
-   "lat": 12.938320000000001,
-   "lng": 77.62863
+   "lat": -33.444500000000005,
+   "lng": -70.69111000000001
   },
   {
-   "lat": 12.938490000000002,
-   "lng": 77.62912
+   "lat": -33.44445,
+   "lng": -70.69102000000001
   },
   {
-   "lat": 12.938500000000001,
-   "lng": 77.62915000000001
+   "lat": -33.44435,
+   "lng": -70.68989
   },
   {
-   "lat": 12.938400000000001,
-   "lng": 77.62918
+   "lat": -33.444300000000005,
+   "lng": -70.68851000000001
   },
   {
-   "lat": 12.938320000000001,
-   "lng": 77.62891
+   "lat": -33.44427,
+   "lng": -70.68778
   },
   {
-   "lat": 12.93819,
-   "lng": 77.62855
+   "lat": -33.444140000000004,
+   "lng": -70.68546
   },
   {
-   "lat": 12.93805,
-   "lng": 77.62825000000001
+   "lat": -33.444050000000004,
+   "lng": -70.68346000000001
   },
   {
-   "lat": 12.93782,
-   "lng": 77.62782
+   "lat": -33.44389,
+   "lng": -70.68041000000001
   },
   {
-   "lat": 12.937600000000002,
-   "lng": 77.62746000000001
+   "lat": -33.44386,
+   "lng": -70.68011
   },
   {
-   "lat": 12.937410000000002,
-   "lng": 77.6272
+   "lat": -33.44389,
+   "lng": -70.67994
   },
   {
-   "lat": 12.936860000000001,
-   "lng": 77.62652
+   "lat": -33.443920000000006,
+   "lng": -70.67976
   },
   {
-   "lat": 12.93519,
-   "lng": 77.62449000000001
+   "lat": -33.44398,
+   "lng": -70.67960000000001
   },
   {
-   "lat": 12.935010000000002,
-   "lng": 77.62428000000001
+   "lat": -33.44395,
+   "lng": -70.67913
   },
   {
-   "lat": 12.93491,
-   "lng": 77.62418000000001
+   "lat": -33.4439,
+   "lng": -70.67876000000001
   },
   {
-   "lat": 12.93471,
-   "lng": 77.62403
+   "lat": -33.443720000000006,
+   "lng": -70.67734
   },
   {
-   "lat": 12.934520000000001,
-   "lng": 77.6239
+   "lat": -33.443630000000006,
+   "lng": -70.67634000000001
   },
   {
-   "lat": 12.93387,
-   "lng": 77.62357
+   "lat": -33.44351,
+   "lng": -70.67536000000001
   },
   {
-   "lat": 12.933390000000001,
-   "lng": 77.62335
+   "lat": -33.443380000000005,
+   "lng": -70.67396000000001
   },
   {
-   "lat": 12.932680000000001,
-   "lng": 77.62307000000001
+   "lat": -33.44332,
+   "lng": -70.67357000000001
   },
   {
-   "lat": 12.93096,
-   "lng": 77.62240000000001
+   "lat": -33.44323,
+   "lng": -70.67304
   },
   {
-   "lat": 12.929490000000001,
-   "lng": 77.62184
+   "lat": -33.44314,
+   "lng": -70.67215
   },
   {
-   "lat": 12.92857,
-   "lng": 77.62146000000001
+   "lat": -33.44288,
+   "lng": -70.66986
   },
   {
-   "lat": 12.927460000000002,
-   "lng": 77.62100000000001
+   "lat": -33.44256,
+   "lng": -70.66803
   },
   {
-   "lat": 12.926210000000001,
-   "lng": 77.6205
+   "lat": -33.44248,
+   "lng": -70.66751000000001
   },
   {
-   "lat": 12.92567,
-   "lng": 77.62026
+   "lat": -33.4423,
+   "lng": -70.66648
   },
   {
-   "lat": 12.925500000000001,
-   "lng": 77.62015000000001
+   "lat": -33.44216,
+   "lng": -70.6652
   },
   {
-   "lat": 12.925360000000001,
-   "lng": 77.61994
+   "lat": -33.442130000000006,
+   "lng": -70.66499
   },
   {
-   "lat": 12.925220000000001,
-   "lng": 77.61973
+   "lat": -33.44211,
+   "lng": -70.6645
   },
   {
-   "lat": 12.925,
-   "lng": 77.61921000000001
+   "lat": -33.442,
+   "lng": -70.66348
   },
   {
-   "lat": 12.92477,
-   "lng": 77.61863000000001
+   "lat": -33.441840000000006,
+   "lng": -70.66153
   },
   {
-   "lat": 12.92449,
-   "lng": 77.61803
+   "lat": -33.441750000000006,
+   "lng": -70.66082
   },
   {
-   "lat": 12.925730000000001,
-   "lng": 77.61726
+   "lat": -33.441770000000005,
+   "lng": -70.66078
   },
   {
-   "lat": 12.925780000000001,
-   "lng": 77.61726
+   "lat": -33.441770000000005,
+   "lng": -70.66073
   },
   {
-   "lat": 12.925830000000001,
-   "lng": 77.61728000000001
+   "lat": -33.44178,
+   "lng": -70.66064
   },
   {
-   "lat": 12.925960000000002,
-   "lng": 77.61720000000001
+   "lat": -33.441790000000005,
+   "lng": -70.66056
   },
   {
-   "lat": 12.927830000000002,
-   "lng": 77.61607000000001
+   "lat": -33.441840000000006,
+   "lng": -70.66048
   },
   {
-   "lat": 12.92736,
-   "lng": 77.61586000000001
+   "lat": -33.441880000000005,
+   "lng": -70.66044000000001
   },
   {
-   "lat": 12.927000000000001,
-   "lng": 77.6157
+   "lat": -33.442890000000006,
+   "lng": -70.6607
   },
   {
-   "lat": 12.92669,
-   "lng": 77.61558000000001
+   "lat": -33.44333,
+   "lng": -70.66081000000001
   },
   {
-   "lat": 12.926240000000002,
-   "lng": 77.61552
+   "lat": -33.44342,
+   "lng": -70.66078
   },
   {
-   "lat": 12.925960000000002,
-   "lng": 77.61546000000001
+   "lat": -33.443580000000004,
+   "lng": -70.66079
   },
   {
-   "lat": 12.925170000000001,
-   "lng": 77.61521
+   "lat": -33.443670000000004,
+   "lng": -70.66079
   },
   {
-   "lat": 12.92444,
-   "lng": 77.61493
+   "lat": -33.4442,
+   "lng": -70.66089000000001
   },
   {
-   "lat": 12.924290000000001,
-   "lng": 77.61491000000001
+   "lat": -33.44454,
+   "lng": -70.66090000000001
   },
   {
-   "lat": 12.924140000000001,
-   "lng": 77.61482000000001
+   "lat": -33.44473,
+   "lng": -70.66084000000001
   },
   {
-   "lat": 12.923760000000001,
-   "lng": 77.61469000000001
+   "lat": -33.444810000000004,
+   "lng": -70.66079
   },
   {
-   "lat": 12.9234,
-   "lng": 77.61459
+   "lat": -33.445,
+   "lng": -70.66078
   },
   {
-   "lat": 12.923200000000001,
-   "lng": 77.61455000000001
+   "lat": -33.44567,
+   "lng": -70.66072000000001
   },
   {
-   "lat": 12.922820000000002,
-   "lng": 77.6144
+   "lat": -33.44648,
+   "lng": -70.6606
   },
   {
-   "lat": 12.92219,
-   "lng": 77.61406000000001
+   "lat": -33.44715,
+   "lng": -70.66046
   },
   {
-   "lat": 12.92187,
-   "lng": 77.61388000000001
+   "lat": -33.44751,
+   "lng": -70.66035000000001
   },
   {
-   "lat": 12.921240000000001,
-   "lng": 77.61351
+   "lat": -33.448010000000004,
+   "lng": -70.66018000000001
   },
   {
-   "lat": 12.920950000000001,
-   "lng": 77.61337
+   "lat": -33.44861,
+   "lng": -70.65997
   },
   {
-   "lat": 12.92069,
-   "lng": 77.61330000000001
+   "lat": -33.44915,
+   "lng": -70.6598
   },
   {
-   "lat": 12.92045,
-   "lng": 77.61319
+   "lat": -33.44959,
+   "lng": -70.6597
   },
   {
-   "lat": 12.920340000000001,
-   "lng": 77.61311
+   "lat": -33.450230000000005,
+   "lng": -70.65948
   },
   {
-   "lat": 12.920050000000002,
-   "lng": 77.61303000000001
+   "lat": -33.45159,
+   "lng": -70.65909
   },
   {
-   "lat": 12.919640000000001,
-   "lng": 77.61294000000001
+   "lat": -33.45235,
+   "lng": -70.6589
   },
   {
-   "lat": 12.919680000000001,
-   "lng": 77.61178000000001
+   "lat": -33.454280000000004,
+   "lng": -70.65831
   },
   {
-   "lat": 12.919720000000002,
-   "lng": 77.61123
+   "lat": -33.454620000000006,
+   "lng": -70.65818
   },
   {
-   "lat": 12.919740000000001,
-   "lng": 77.61081
+   "lat": -33.45483,
+   "lng": -70.65806
   },
   {
-   "lat": 12.919770000000002,
-   "lng": 77.61032
+   "lat": -33.455040000000004,
+   "lng": -70.65791
   },
   {
-   "lat": 12.919290000000002,
-   "lng": 77.61030000000001
+   "lat": -33.455490000000005,
+   "lng": -70.65746
   },
   {
-   "lat": 12.917810000000001,
-   "lng": 77.61023
+   "lat": -33.45562,
+   "lng": -70.65737
   },
   {
-   "lat": 12.917090000000002,
-   "lng": 77.61017000000001
+   "lat": -33.455760000000005,
+   "lng": -70.65725
   },
   {
-   "lat": 12.915590000000002,
-   "lng": 77.61012000000001
+   "lat": -33.45593,
+   "lng": -70.65713000000001
   },
   {
-   "lat": 12.914000000000001,
-   "lng": 77.6101
+   "lat": -33.456230000000005,
+   "lng": -70.65698
   },
   {
-   "lat": 12.914000000000001,
-   "lng": 77.61003000000001
+   "lat": -33.45644,
+   "lng": -70.65690000000001
   },
   {
-   "lat": 12.913910000000001,
-   "lng": 77.60959000000001
+   "lat": -33.45667,
+   "lng": -70.65685
   },
   {
-   "lat": 12.91435,
-   "lng": 77.60959000000001
+   "lat": -33.457350000000005,
+   "lng": -70.65677000000001
   },
   {
-   "lat": 12.914340000000001,
-   "lng": 77.60948
+   "lat": -33.45765,
+   "lng": -70.65676
+  },
+  {
+   "lat": -33.45823,
+   "lng": -70.65684
+  },
+  {
+   "lat": -33.45888,
+   "lng": -70.65698
+  },
+  {
+   "lat": -33.45958,
+   "lng": -70.65706
+  },
+  {
+   "lat": -33.459860000000006,
+   "lng": -70.65708000000001
+  },
+  {
+   "lat": -33.4604,
+   "lng": -70.65707
+  },
+  {
+   "lat": -33.46204,
+   "lng": -70.65696000000001
+  },
+  {
+   "lat": -33.462360000000004,
+   "lng": -70.65694
+  },
+  {
+   "lat": -33.46566,
+   "lng": -70.65672
+  },
+  {
+   "lat": -33.46679,
+   "lng": -70.65667
+  },
+  {
+   "lat": -33.46745,
+   "lng": -70.65663
+  },
+  {
+   "lat": -33.46848,
+   "lng": -70.65662
+  },
+  {
+   "lat": -33.46952,
+   "lng": -70.65654
+  },
+  {
+   "lat": -33.46981,
+   "lng": -70.65650000000001
+  },
+  {
+   "lat": -33.47019,
+   "lng": -70.65651000000001
+  },
+  {
+   "lat": -33.47077,
+   "lng": -70.65651000000001
+  },
+  {
+   "lat": -33.470980000000004,
+   "lng": -70.65648
+  },
+  {
+   "lat": -33.471470000000004,
+   "lng": -70.65636
+  },
+  {
+   "lat": -33.47162,
+   "lng": -70.65635
+  },
+  {
+   "lat": -33.47178,
+   "lng": -70.65627
+  },
+  {
+   "lat": -33.47224,
+   "lng": -70.65597000000001
+  },
+  {
+   "lat": -33.47231,
+   "lng": -70.65596000000001
+  },
+  {
+   "lat": -33.47236,
+   "lng": -70.65597000000001
+  },
+  {
+   "lat": -33.47249,
+   "lng": -70.65588000000001
+  },
+  {
+   "lat": -33.47289,
+   "lng": -70.65567
+  },
+  {
+   "lat": -33.47305,
+   "lng": -70.65555
+  },
+  {
+   "lat": -33.473420000000004,
+   "lng": -70.65527
+  },
+  {
+   "lat": -33.47368,
+   "lng": -70.65512000000001
   }
  ]
 }

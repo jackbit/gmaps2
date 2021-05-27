@@ -66,10 +66,23 @@ func S2Polyline(args S2PolylineArgs) error {
 
 	s2region := linestring.S2Region()
 	coverer := &s2.RegionCoverer{
-		MinLevel: 15,
-		MaxLevel: 20,
-		MaxCells: 50,
+		MinLevel: 8,
+		MaxLevel: 15,
+		MaxCells: 500,
 	}
+
+	fmt.Println(
+		fmt.Sprintf("S2Region Contains Point: %v", s2region.RectBound().ContainsPoint(s2.PointFromLatLng(s2.LatLngFromDegrees(cellpoint[0], cellpoint[1])))),
+	)
+
+	var rectboundstoken []string
+	for _, cellID := range s2region.RectBound().CellUnionBound() {
+		rectboundstoken = append(rectboundstoken, cellID.ToToken())
+	}
+	fmt.Println(
+		fmt.Sprintf("S2Region RectBounds Point: %v", strings.Join(rectboundstoken, ",")),
+	)
+
 	covering := coverer.Covering(s2region)
 	fmt.Println("S2Region Recovering:")
 	var celltokens []string
@@ -78,7 +91,9 @@ func S2Polyline(args S2PolylineArgs) error {
 		celltokens = append(celltokens, cellID.ToToken())
 		cells = append(cells, s2.CellFromCellID(cellID))
 	}
-	fmt.Println(strings.Join(celltokens, ","))
+	fmt.Println(
+		fmt.Sprintf("S2 Coverings: %v", strings.Join(celltokens, ",")),
+	)
 
 	fmt.Println(fmt.Sprintf("CellID %v intersects S2Cover ? %v", cell.ID().ToToken(), covering.IntersectsCellID(cell.ID())))
 	fmt.Println(fmt.Sprintf("CellID %v contains S2Cover ? %v", cell.ID().ToToken(), covering.ContainsCellID(cell.ID())))

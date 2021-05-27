@@ -9,6 +9,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/golang/geo/s2"
 )
 
 const (
@@ -52,6 +54,12 @@ func StringToLatLng(point string) []float64 {
 	lat, _ := strconv.ParseFloat(strings.TrimSpace(points[0]), 64)
 	lng, _ := strconv.ParseFloat(strings.TrimSpace(points[1]), 64)
 	return []float64{lat, lng}
+}
+
+// StringToS2LatLng to convert string 'lat,lng' to s2.LatLng
+func StringToS2LatLng(point string) s2.LatLng {
+	coords := StringToLatLng(point)
+	return s2.LatLngFromDegrees(coords[0], coords[1])
 }
 
 // PointToBound to returns coordinates of the southwest and northeast corners of a box
